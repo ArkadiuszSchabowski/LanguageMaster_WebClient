@@ -1,13 +1,18 @@
 <div id="navbar-container">
-    <button mat-button [matMenuTriggerFor]="menu" id="menu"><mat-icon>menu</mat-icon></button>
-<mat-menu #menu="matMenu">
-  <button mat-menu-item routerLink="/">Strona główna</button>
-  <button mat-menu-item routerLink="/login">Logowanie</button>
-  <button mat-menu-item routerLink="/register">Rejestracja</button>
-  <button mat-menu-item routerLink="/games">Gry</button>
-</mat-menu>
-  <button mat-button class="menu-button" routerLink="/">Strona główna</button>
-  <button mat-button class="menu-button" routerLink="/login">Logowanie</button>
-  <button mat-button class="menu-button" routerLink="/register">Rejestracja</button>
-  <button mat-button class="menu-button" routerLink="/games">Gry</button>
+  <div id="menu-buttons">
+    <button mat-button [matMenuTriggerFor]="menu" id="menu">
+      <mat-icon>menu</mat-icon>
+    </button>
+    <mat-menu #menu="matMenu">
+      <button class="menu-button" mat-menu-item routerLink="/">Strona główna</button>
+      <button class="menu-button" mat-menu-item routerLink="/login">Logowanie</button>
+      <button class="menu-button" mat-menu-item routerLink="/register">Rejestracja</button>
+      <button class="menu-button" mat-menu-item routerLink="/games">Gry</button>
+    </mat-menu>
+  </div>
+  <div id="tab-buttons"></div>
+  <button class="tab-button" routerLink="/">Strona główna</button>
+  <button class="tab-button" routerLink="/login">Logowanie</button>
+  <button class="tab-button" routerLink="/register">Rejestracja</button>
+  <button class="tab-button" routerLink="/games">Gry</button>
 </div>
