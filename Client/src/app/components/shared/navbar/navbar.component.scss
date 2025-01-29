@@ -3,42 +3,77 @@
 
 ::ng-deep .mdc-button__label,
 mat-icon {
-    font-size: 16px;
+  font-size: 16px;
+  color: white !important;
+}
+::ng-deep .mat-mdc-menu-content{
+  background-color: mat.get-color-from-palette(theme.$accent, 700) !important;
+}
+
+button{
   color: white !important;
 }
 
 #navbar-container {
   display: flex;
   align-items: center;
-  width: 100%;
+  width: 100vw;
   height: 100%;
   padding-left: 20px;
   background-color: mat.get-color-from-palette(theme.$accent, 700);
 }
-.menu-button{
-    display: none;
-  }
+
+#nav-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.tab-button {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 100%;
+  font-size: 16px;
+  border: 0;
+  background-color: mat.get-color-from-palette(theme.$accent);
+}
+.menu-button:hover{
+  text-decoration: underline;
+  background-color: mat.get-color-from-palette(theme.$accent, 800);  
+}
+
+.tab-button:hover{
+  text-decoration: underline;
+  background-color: mat.get-color-from-palette(theme.$accent, 800);
+}
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   #navbar-container {
-    justify-content: left;
+    justify-content: center;
+    padding-left: 0px;
   }
   #menu {
     display: none;
   }
-  .menu-button{
+  .tab-button {
     display: flex;
   }
 }
 
 @media screen and (min-width: 1200px) {
   #navbar-container {
-    justify-content: left;
+    justify-content: center;
+    padding-left: 0px;
   }
   #menu {
     display: none;
   }
-  .menu-button{
+  .tab-button {
     display: flex;
   }
 }
