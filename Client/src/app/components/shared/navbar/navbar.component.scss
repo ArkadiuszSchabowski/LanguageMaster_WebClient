@@ -43,12 +43,10 @@ button{
   background-color: mat.get-color-from-palette(theme.$accent);
 }
 .menu-button:hover{
-  text-decoration: underline;
   background-color: mat.get-color-from-palette(theme.$accent, 800);  
 }
 
 .tab-button:hover{
-  text-decoration: underline;
   background-color: mat.get-color-from-palette(theme.$accent, 800);
 }
 

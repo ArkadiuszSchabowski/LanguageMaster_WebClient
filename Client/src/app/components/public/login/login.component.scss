@@ -1,0 +1,68 @@
+@use "@angular/material" as mat;
+@use "src/styles" as theme;
+
+mat-card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    border: 2px solid white;
+    border-radius: 25px;
+    background-color: mat.get-color-from-palette(theme.$accent);
+}
+::ng-deep mat-form-field{
+    width: 100%;
+    margin-top: 20px;
+}
+mat-label{
+    color: mat.get-color-from-palette(theme.$accent);
+}
+
+#login-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: calc(100% - 90px);
+    padding-left: 0;
+    padding-right: 0;
+    background-image: url(../../../../assets/backgrounds/login.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#login-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+#title-label{
+    margin-bottom: 20px;
+    font-size: 22px;
+    color: white;
+}
+
+::ng-deep .mdc-button__label{
+    font-size: 18px;
+    font-weight: bold;
+    color: mat.get-color-from-palette(theme.$accent) !important;
+}
+
+.submit-button{
+    margin-top: 20px;
+    background-color: white;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    #login-container{
+        height: calc(100% - 130px);
+    }
+  }
+  
+  @media screen and (min-width: 1200px) {
+    #login-container{
+        height: calc(100% - 130px);
+    }
+  }

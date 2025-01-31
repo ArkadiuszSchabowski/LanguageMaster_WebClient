@@ -28,8 +28,23 @@ body {
 }
 
 .component-container {
-  min-width: 500px;
+  min-width: 400px;
   padding: 70px 20px 20px 20px;
+}
+
+.mat-mdc-form-field-subscript-wrapper {
+  display: none !important;
+}
+
+.error-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  margin-top: 5px;
+  font-size: 16px;
+  color: orangered;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
