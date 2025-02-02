@@ -11,6 +11,11 @@
   background-size: cover;
   background-repeat: no-repeat;
 }
+#hint-level-table{
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
 
 #cat-container{
   display: flex;
@@ -44,8 +49,8 @@
 }
 
 .select-level-button{
-  width: auto;
-  margin-bottom: 5px;
+  width: 150px;
+  margin: 5px 5px 0 0;
   font-size: 18px;
   color: white !important;
   background-color: mat.get-color-from-palette(theme.$accent, 700) !important;
@@ -56,7 +61,9 @@
 }
 
 #hint-window{
-  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.hint{
   margin-bottom: 10px;
 }
 
@@ -69,6 +76,10 @@
   }
   #select-level-container{
     padding-left: 50px;
+  }
+  #hint-level-description{
+    display: flex;
+    width: 80%;
   }
   .cat {
     width: 300px;
@@ -84,6 +95,14 @@
   }
   #select-level-container{
     padding-left: 50px;
+  }
+  #container-select-button{
+    display: flex;
+    flex-direction: row;
+  }
+  #hint-level-description{
+    display: flex;
+    width: 60%;
   }
   .cat {
     width: 300px;
