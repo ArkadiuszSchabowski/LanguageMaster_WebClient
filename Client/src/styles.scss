@@ -27,6 +27,11 @@ body {
   background-color: mat.get-color-from-palette($primary);
 }
 
+mat-icon {
+  font-size: 16px;
+  color: white !important;
+}
+
 .component-container {
   min-width: 400px;
   min-height: calc(100% - 90px);
