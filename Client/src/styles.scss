@@ -29,6 +29,7 @@ body {
 
 .component-container {
   min-width: 400px;
+  min-height: calc(100% - 90px);
   padding: 70px 20px 20px 20px;
 }
 
