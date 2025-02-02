@@ -21,19 +21,32 @@
     <div id="cat-login" class="cat"></div>
   </div>
   <div id="select-level-container">
-    <button mat-button class="select-level-button hint">Daj wskazówkę</button>
-    <div id="hint-window">
-      <span>Nie musisz zawsze uczyć się na swoim poziomie - warto poznać też inne.
-      Nawet z poziomów o niższym poziomie niż Twój możesz się czegoś dowiedzieć
-      Gdy masz lepszy dzień spróboj wejść na poziom wyżej.
-      Mogę Ci podpowiedzieć, że najlepszą strategią może być balans między róźnymi poziomami.
-      Jestem pewna, że osiągniesz swój cel!</span>
+    <button mat-button class="select-level-button hint" (click)="showHint()">Daj wskazówkę</button>
+    <div id="hint-window" *ngIf="isHint">
+      <div id="hint-level-description">
+        Nie musisz zawsze uczyć się na swoim poziomie - warto poznać też inne.
+        Nawet z poziomów o niższym poziomie niż Twój możesz się czegoś
+        dowiedzieć. Gdy masz lepszy dzień spróboj wejść na poziom wyżej. Mogę Ci
+        podpowiedzieć, że najlepszą strategią może być balans między róźnymi
+        poziomami. Jestem pewna, że osiągniesz swój cel!
+      </div>
+      <div id="hint-level-table">
+        <span>Przypomnienie poziomów:</span>
+        <span>A1 - Początkujący</span>
+        <span>A2 - Podstawowy</span>
+        <span>B1 - Średnio - zaawansowany</span>
+        <span>B2 - Wyższy - średnio - zaawansowany</span>
+        <span>C1 - Zaawansowany</span>
+        <span>C2 - Biegły</span>
+      </div>
     </div>
-    <button mat-button class="select-level-button">A1 - Początkujący</button>
-    <button mat-button class="select-level-button">A2 - Podstawowy</button>
-    <button mat-button class="select-level-button">B1 - Średnio - zaawansowany</button>
-    <button mat-button class="select-level-button">B2 - Wyższy - średnio - zaawansowany</button>
-    <button mat-button class="select-level-button">C1 - Zaawansowany</button>
-    <button mat-button class="select-level-button">C2 - Biegły</button>
+    <div id="container-select-button">
+      <button mat-button class="select-level-button">A1</button>
+      <button mat-button class="select-level-button">A2</button>
+      <button mat-button class="select-level-button">B1</button>
+      <button mat-button class="select-level-button">B2</button>
+      <button mat-button class="select-level-button">C1</button>
+      <button mat-button class="select-level-button">C2</button>
+    </div>
   </div>
 </div>
