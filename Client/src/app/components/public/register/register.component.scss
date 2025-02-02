@@ -44,14 +44,10 @@ mat-label{
     color: white;
 }
 
-::ng-deep .mdc-button__label{
-    font-size: 18px;
-    font-weight: bold;
-    color: mat.get-color-from-palette(theme.$accent) !important;
-}
-
 .submit-button{
     margin-top: 20px;
+    font-size: 22px;
+    color: mat.get-color-from-palette(theme.$accent);
     background-color: white;
 }
 
