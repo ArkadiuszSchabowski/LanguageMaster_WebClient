@@ -46,6 +46,15 @@ body {
   font-size: 16px;
   color: orangered;
 }
+.cloud{
+  margin-bottom: 10px;
+}
+.cloud-label{
+  padding: 10px;
+  border-radius: 25px;
+  color: black;
+  background-color: white;
+}
 
 input::-ms-reveal,
 input::-ms-clear {
