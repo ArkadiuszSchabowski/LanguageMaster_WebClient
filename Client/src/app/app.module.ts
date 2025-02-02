@@ -11,6 +11,12 @@ import { WordEnglishToPolishComponent } from './components/games/word-english-to
 import { MaterialModule } from './_modules/material/material.module';
 import { PublicModule } from './_modules/public/public.module';
 import { ToastrModule } from 'ngx-toastr';
+import { A1Component } from './components/auth/level/a1/a1.component';
+import { A2Component } from './components/auth/level/a2/a2.component';
+import { B1Component } from './components/auth/level/b1/b1.component';
+import { B2Component } from './components/auth/level/b2/b2.component';
+import { C1Component } from './components/auth/level/c1/c1.component';
+import { C2Component } from './components/auth/level/c2/c2.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +25,12 @@ import { ToastrModule } from 'ngx-toastr';
     PersonalInfoComponent,
     WordPolishToEnglishComponent,
     WordEnglishToPolishComponent,
+    A1Component,
+    A2Component,
+    B1Component,
+    B2Component,
+    C1Component,
+    C2Component,
   ],
   imports: [
     BrowserModule,
