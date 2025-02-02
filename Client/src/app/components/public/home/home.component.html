@@ -1,13 +1,39 @@
-<div id="home-container" class="component-container">
+<!-- <div id="home-container-logout" class="component-container">
+
     <div id="description">
         <h1>Wejdź do świata językowej przygody!</h1>
 
-        <p>Zacznij jako mały kotek i ucz się języka przez zabawę.</p>
+        <p>Nauka języków jeszcze nigdy nie była tak prosta.</p>
         <p>Każdy test sprawdza Twoje umiejętności językowe.</p>
         <p>Zbieraj punkty i odblokowuj ukryte funkcje aplikacji!</p>
         <p>Pokonuj wyzwania - Wyższy poziom to trudniejsze zadania!</p>
-        <p>Zbieraj nagrody - Odblokuj bonusy, które pomogą Ci w nauce!</p>
         <p>Poznaj niespodzianki, które czekają na Ciebie!</p>
+        <p>Kotek będzie dawał Ci cenne wskazówki na każdym etapie!<p>
     </div>
-    <div id="cat"></div>
+    <div id="cat-logout" class="cat"></div>
+</div> -->
+
+<div id="home-container-login" class="component-container">
+  <div id="cat-container">
+    <div class="cloud cloud-label">
+      Wybierz poziom na jakim dziś będziemy się uczyć!
+    </div>
+    <div id="cat-login" class="cat"></div>
+  </div>
+  <div id="select-level-container">
+    <button mat-button class="select-level-button hint">Daj wskazówkę</button>
+    <div id="hint-window">
+      <span>Nie musisz zawsze uczyć się na swoim poziomie - warto poznać też inne.
+      Nawet z poziomów o niższym poziomie niż Twój możesz się czegoś dowiedzieć
+      Gdy masz lepszy dzień spróboj wejść na poziom wyżej.
+      Mogę Ci podpowiedzieć, że najlepszą strategią może być balans między róźnymi poziomami.
+      Jestem pewna, że osiągniesz swój cel!</span>
+    </div>
+    <button mat-button class="select-level-button">A1 - Początkujący</button>
+    <button mat-button class="select-level-button">A2 - Podstawowy</button>
+    <button mat-button class="select-level-button">B1 - Średnio - zaawansowany</button>
+    <button mat-button class="select-level-button">B2 - Wyższy - średnio - zaawansowany</button>
+    <button mat-button class="select-level-button">C1 - Zaawansowany</button>
+    <button mat-button class="select-level-button">C2 - Biegły</button>
+  </div>
 </div>

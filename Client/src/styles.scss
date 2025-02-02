@@ -27,8 +27,14 @@ body {
   background-color: mat.get-color-from-palette($primary);
 }
 
+mat-icon {
+  font-size: 16px;
+  color: white !important;
+}
+
 .component-container {
   min-width: 400px;
+  min-height: calc(100% - 90px);
   padding: 70px 20px 20px 20px;
 }
 
@@ -45,6 +51,15 @@ body {
   margin-top: 5px;
   font-size: 16px;
   color: orangered;
+}
+.cloud{
+  margin-bottom: 10px;
+}
+.cloud-label{
+  padding: 10px;
+  border-radius: 25px;
+  color: black;
+  background-color: white;
 }
 
 input::-ms-reveal,
