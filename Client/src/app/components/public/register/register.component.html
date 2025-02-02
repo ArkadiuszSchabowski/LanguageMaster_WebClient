@@ -1,3 +1,75 @@
 <div id="register-container" class="component-container">
-    <p>register works!</p>
+  <form
+    #registerForm="ngForm"
+    autocomplete="off"
+    (ngSubmit)="tryRegister(registerForm)"
+  >
+    <mat-card>
+      <mat-card-content>
+        <div id="register-form">
+          <label id="title-label">Formularz rejestracji</label>
+          <mat-form-field>
+            <mat-label>Adres e-mail</mat-label>
+            <input matInput name="email" [(ngModel)]="model.email" />
+          </mat-form-field>
+          <div *ngIf="errors.email" class="error-form">
+            <span>{{ errors.email }}</span>
+          </div>
+          <mat-form-field>
+            <mat-label>Hasło</mat-label>
+            <input
+              matInput
+              [type]="hidePassword() ? 'password' : 'text'"
+              name="password"
+              [(ngModel)]="model.password"
+            />
+            <button
+              mat-icon-button
+              matSuffix
+              (click)="clickPassword($event)"
+              type="button"
+              [attr.aria-label]="hidePassword() ? 'Pokaż hasło' : 'Ukryj hasło'"
+              [attr.aria-pressed]="hidePassword()"
+            >
+              <mat-icon>{{
+                hidePassword() ? "visibility_off" : "visibility"
+              }}</mat-icon>
+            </button>
+          </mat-form-field>
+          <div *ngIf="errors.password" class="error-form">
+            <span>{{ errors.password }}</span>
+          </div>
+          <mat-form-field>
+            <mat-label>Powtórz hasło</mat-label>
+            <input
+              matInput
+              [type]="hideRepeatPassword() ? 'password' : 'text'"
+              name="repeatPassword"
+              [(ngModel)]="model.repeatPassword"
+            />
+            <button
+              mat-icon-button
+              matSuffix
+              (click)="clickRepeatPassword($event)"
+              type="button"
+              [attr.aria-label]="
+                hideRepeatPassword() ? 'Pokaż hasło' : 'Ukryj hasło'
+              "
+              [attr.aria-pressed]="hideRepeatPassword()"
+            >
+              <mat-icon>{{
+                hideRepeatPassword() ? "visibility_off" : "visibility"
+              }}</mat-icon>
+            </button>
+          </mat-form-field>
+          <div *ngIf="errors.repeatPassword" class="error-form">
+            <span>{{ errors.repeatPassword }}</span>
+          </div>
+          <button mat-stroked-button type="submit" class="submit-button">
+            Zarejestruj się
+          </button>
+        </div>
+      </mat-card-content>
+    </mat-card>
+  </form>
 </div>
