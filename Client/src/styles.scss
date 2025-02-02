@@ -47,6 +47,11 @@ body {
   color: orangered;
 }
 
+input::-ms-reveal,
+input::-ms-clear {
+  display: none;
+}
+
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .component-container {
     min-height: calc(100% - 120px);
