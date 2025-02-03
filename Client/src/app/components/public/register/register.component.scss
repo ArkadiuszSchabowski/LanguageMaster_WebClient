@@ -52,13 +52,13 @@ mat-label{
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
-    #login-container{
+    #register-container{
         height: calc(100% - 130px);
     }
   }
   
   @media screen and (min-width: 1200px) {
-    #login-container{
+    #register-container{
         height: calc(100% - 130px);
     }
   }
