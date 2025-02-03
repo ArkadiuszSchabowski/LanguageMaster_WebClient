@@ -43,6 +43,10 @@
   background-image: url(../../../../assets/kitten2.png);
 }
 
+#hint-window{
+  margin-bottom: 10px;
+}
+
 .cat{
   width: 200px;
   height: 200px;
@@ -58,10 +62,6 @@
 
 .select-level-button:hover{
   background-color: mat.get-color-from-palette(theme.$primary, 800) !important;
-}
-
-#hint-window{
-  margin-bottom: 10px;
 }
 .hint{
   margin-bottom: 10px;
