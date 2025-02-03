@@ -5,10 +5,12 @@ import { NavbarComponent } from './components/shared/navbar/navbar.component';
 import { MaterialModule } from './_modules/material/material.module';
 
 describe('AppComponent', () => {
-  beforeEach(() => TestBed.configureTestingModule({
-    imports: [RouterTestingModule, MaterialModule],
-    declarations: [AppComponent, NavbarComponent]
-  }));
+  beforeEach(() =>
+    TestBed.configureTestingModule({
+      imports: [RouterTestingModule, MaterialModule],
+      declarations: [AppComponent, NavbarComponent],
+    })
+  );
 
   it('should create the app', () => {
     const fixture = TestBed.createComponent(AppComponent);
@@ -21,5 +23,4 @@ describe('AppComponent', () => {
     const app = fixture.componentInstance;
     expect(app.title).toEqual('Language Master');
   });
-
 });

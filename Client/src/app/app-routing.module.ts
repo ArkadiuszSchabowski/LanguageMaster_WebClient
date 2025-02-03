@@ -16,27 +16,36 @@ import { LoginComponent } from './components/public/login/login.component';
 import { RegisterComponent } from './components/public/register/register.component';
 
 const routes: Routes = [
-  {path: "", component: HomeComponent},
-  {path: "login", component: LoginComponent},
-  {path: "register", component: RegisterComponent},
-  { path: "games", component: GamesComponent },
-  { path: "games/memory", component: MemoryComponent },
-  { path: "games/sound-match", component: SoundMatchComponent },
-  { path: "games/word-polish-to-english", component: WordPolishToEnglishComponent },
-  { path: "games/word-english-to-polish", component: WordEnglishToPolishComponent },
-  {path: "level", children: [
-    { path: "a1", component: A1Component},
-    { path: "a2", component: A2Component},
-    { path: "b1", component: B1Component},
-    { path: "b2", component: B2Component},
-    { path: "c1", component: C1Component},
-    { path: "c2", component: C2Component},
-  ]},
-  {path: "**", component: HomeComponent}
+  { path: '', component: HomeComponent },
+  { path: 'login', component: LoginComponent },
+  { path: 'register', component: RegisterComponent },
+  { path: 'games', component: GamesComponent },
+  { path: 'games/memory', component: MemoryComponent },
+  { path: 'games/sound-match', component: SoundMatchComponent },
+  {
+    path: 'games/word-polish-to-english',
+    component: WordPolishToEnglishComponent,
+  },
+  {
+    path: 'games/word-english-to-polish',
+    component: WordEnglishToPolishComponent,
+  },
+  {
+    path: 'level',
+    children: [
+      { path: 'a1', component: A1Component },
+      { path: 'a2', component: A2Component },
+      { path: 'b1', component: B1Component },
+      { path: 'b2', component: B2Component },
+      { path: 'c1', component: C1Component },
+      { path: 'c2', component: C2Component },
+    ],
+  },
+  { path: '**', component: HomeComponent },
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}
