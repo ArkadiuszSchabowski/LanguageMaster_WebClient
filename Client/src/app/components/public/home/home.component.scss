@@ -43,6 +43,10 @@
   background-image: url(../../../../assets/kitten2.png);
 }
 
+#hint-window{
+  margin-bottom: 10px;
+}
+
 .cat{
   width: 200px;
   height: 200px;
@@ -59,10 +63,6 @@
 .select-level-button:hover{
   background-color: mat.get-color-from-palette(theme.$primary, 800) !important;
 }
-
-#hint-window{
-  margin-bottom: 10px;
-}
 .hint{
   margin-bottom: 10px;
 }
@@ -74,8 +74,14 @@
   #home-container-login {
     flex-direction: row;
   }
+  #cat-container{
+    width: 20%;
+    min-width: 300px;
+    height: 100%;
+  }
   #select-level-container{
-    padding-left: 50px;
+    width: 80%;
+    height: 100%;
   }
   #hint-level-description{
     display: flex;
@@ -93,8 +99,15 @@
   #home-container-login {
     flex-direction: row;
   }
+  #cat-container{
+    width: 20%;
+    min-width: 300px;
+    height: 100%;
+  }
   #select-level-container{
-    padding-left: 50px;
+    width: 70%;
+    height: 100%;
+    margin-left: 30px;
   }
   #container-select-button{
     display: flex;
