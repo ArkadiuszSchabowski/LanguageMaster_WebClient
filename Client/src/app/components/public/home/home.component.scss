@@ -74,8 +74,14 @@
   #home-container-login {
     flex-direction: row;
   }
+  #cat-container{
+    width: 20%;
+    min-width: 300px;
+    height: 100%;
+  }
   #select-level-container{
-    padding-left: 50px;
+    width: 80%;
+    height: 100%;
   }
   #hint-level-description{
     display: flex;
@@ -93,8 +99,15 @@
   #home-container-login {
     flex-direction: row;
   }
+  #cat-container{
+    width: 20%;
+    min-width: 300px;
+    height: 100%;
+  }
   #select-level-container{
-    padding-left: 50px;
+    width: 70%;
+    height: 100%;
+    margin-left: 30px;
   }
   #container-select-button{
     display: flex;
