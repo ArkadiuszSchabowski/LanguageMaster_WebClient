@@ -1,4 +1,4 @@
-<!-- <div id="home-container-logout" class="component-container">
+<div id="home-container-logout" class="component-container" *ngIf="!isLogin">
 
     <div id="description">
         <h1>Wejdź do świata językowej przygody!</h1>
@@ -11,9 +11,9 @@
         <p>Kotek będzie dawał Ci cenne wskazówki na każdym etapie!<p>
     </div>
     <div id="cat-logout" class="cat"></div>
-</div> -->
+</div>
 
-<div id="home-container-login" class="component-container">
+<div id="home-container-login" class="component-container" *ngIf="isLogin">
   <div id="cat-container">
     <div class="cloud cloud-label">
       Wybierz poziom na jakim dziś będziemy się uczyć!
