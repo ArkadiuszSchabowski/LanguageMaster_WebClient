@@ -15,14 +15,13 @@
 
 <div id="home-container-login" class="component-container" *ngIf="isLogin">
   <div id="cat-container">
-    <div class="cloud cloud-label">
+    <div id="cat-cloud" class="cloud-text">
       Wybierz poziom na jakim dziś będziemy się uczyć!
     </div>
     <div id="cat-login" class="cat"></div>
   </div>
   <div id="select-level-container">
-    <button mat-button class="select-level-button hint" (click)="showHint()">Daj wskazówkę</button>
-    <div id="hint-window" *ngIf="isHint">
+    <div id="hint-window">
       <div id="hint-level-description">
         Nie musisz zawsze uczyć się na swoim poziomie - warto poznać też inne.
         Nawet z poziomów o niższym poziomie niż Twój możesz się czegoś
@@ -41,12 +40,12 @@
       </div>
     </div>
     <div id="container-select-button">
-      <button mat-button class="select-level-button" routerLink="/level/a1">A1</button>
-      <button mat-button class="select-level-button" routerLink="/level/a2">A2</button>
-      <button mat-button class="select-level-button" routerLink="/level/b1">B1</button>
-      <button mat-button class="select-level-button" routerLink="/level/b2">B2</button>
-      <button mat-button class="select-level-button" routerLink="/level/c1">C1</button>
-      <button mat-button class="select-level-button" routerLink="/level/c2">C2</button>
+      <button mat-button class="blue-button" routerLink="/level/a1">A1</button>
+      <button mat-button class="blue-button" routerLink="/level/a2">A2</button>
+      <button mat-button class="blue-button" routerLink="/level/b1">B1</button>
+      <button mat-button class="blue-button" routerLink="/level/b2">B2</button>
+      <button mat-button class="blue-button" routerLink="/level/c1">C1</button>
+      <button mat-button class="blue-button" routerLink="/level/c2">C2</button>
     </div>
   </div>
 </div>
