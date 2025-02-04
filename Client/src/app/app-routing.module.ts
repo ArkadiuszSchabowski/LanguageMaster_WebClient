@@ -14,6 +14,7 @@ import { WordEnglishToPolishComponent } from './components/games/word-english-to
 import { GamesComponent } from './components/public/games/games.component';
 import { LoginComponent } from './components/public/login/login.component';
 import { RegisterComponent } from './components/public/register/register.component';
+import { Lesson1A1Component } from './components/auth/level/a1/lesson1-a1/lesson1-a1.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -41,6 +42,7 @@ const routes: Routes = [
       { path: 'c2', component: C2Component },
     ],
   },
+  {path: 'level/a1/lesson1', component: Lesson1A1Component},
   { path: '**', component: HomeComponent },
 ];
 

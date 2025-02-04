@@ -43,13 +43,6 @@ mat-label {
   color: white;
 }
 
-.submit-button {
-  margin-top: 20px;
-  font-size: 22px;
-  color: mat.get-color-from-palette(theme.$accent);
-  background-color: white;
-}
-
 @media screen and (min-width: 768px) and (max-width: 1199px) {
 }
 
