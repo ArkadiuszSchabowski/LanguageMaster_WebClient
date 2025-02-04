@@ -1,0 +1,38 @@
+<div id="container-a1-lesson1" class="component-container">
+  <p id="lesson-description" class="cloud-text">
+    Lekcja 1. Zanim kotka wyjdzie na miasto, chce nauczyć się nazw przedmiotów w swoim pokoju. Przetłumacz je na angielski! Możesz dwa razy podejrzeć listę, jeśli potrzebujesz pomocy.
+  </p>
+  <form>
+    <div id="game-container">
+      <img src="../../../../../../assets/default.png" class="image" />
+      <mat-form-field>
+        <mat-label>Wpisz tłumaczenie:</mat-label>
+        <input matInput />
+      </mat-form-field>
+      <button mat-button class="blue-button" type="submit">Ok</button>
+      <button
+      *ngIf="!isHint && hintsLeft > 0"
+      mat-button
+      class="blue-button hint-button"
+      type="button"
+      (click)="showHint()"
+    >
+      Skorzystaj ze ściągi
+    </button>
+    </div>
+    <div id="table-container">
+        <div class="table" *ngIf="isHint">
+          <p>ball - piłka</p>
+          <p>bed - łóżko</p>
+          <p>carpet - dywan</p>
+          <p>chair - krzesło</p>
+          <p>clock - zegar</p>
+          <p>desk - biurko</p>
+          <p>flower - kwiatek</p>
+          <p>mirror - lustro</p>
+          <p>pillow - poduszka</p>
+          <p>TV - telewizor</p>
+        </div>
+      </div>
+  </form>
+</div>
